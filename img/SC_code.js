@@ -1,0 +1,1 @@
+document.write('<script language="javascript1.1" src="/gcb/js/cookie_js.js"></script><script language="javascript" src="/gcb/js/Site_Cat_code.js"></script><script language="javascript" src="/gcb/js/Cookie.js"></script><script language="javascript" src="/gcb/js/site_cate_pagecode.js"></script>');

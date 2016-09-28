@@ -1,104 +1,183 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
-<html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<title>IIS 7.0 Detailed Error - 404.0 - Not Found</title> 
-<style type="text/css"> 
-<!-- 
-body{margin:0;font-size:.7em;font-family:Verdana,Arial,Helvetica,sans-serif;background:#CBE1EF;} 
-code{margin:0;color:#006600;font-size:1.1em;font-weight:bold;} 
-.config_source code{font-size:.8em;color:#000000;} 
-pre{margin:0;font-size:1.4em;word-wrap:break-word;} 
-ul,ol{margin:10px 0 10px 40px;} 
-ul.first,ol.first{margin-top:5px;} 
-fieldset{padding:0 15px 10px 15px;} 
-.summary-container fieldset{padding-bottom:5px;margin-top:4px;} 
-legend.no-expand-all{padding:2px 15px 4px 10px;margin:0 0 0 -12px;} 
-legend{color:#333333;padding:4px 15px 4px 10px;margin:4px 0 8px -12px;_margin-top:0px; 
- border-top:1px solid #EDEDED;border-left:1px solid #EDEDED;border-right:1px solid #969696; 
- border-bottom:1px solid #969696;background:#E7ECF0;font-weight:bold;font-size:1em;} 
-a:link,a:visited{color:#007EFF;font-weight:bold;} 
-a:hover{text-decoration:none;} 
-h1{font-size:2.4em;margin:0;color:#FFF;} 
-h2{font-size:1.7em;margin:0;color:#CC0000;} 
-h3{font-size:1.4em;margin:10px 0 0 0;color:#CC0000;} 
-h4{font-size:1.2em;margin:10px 0 5px 0; 
-}#header{width:96%;margin:0 0 0 0;padding:6px 2% 6px 2%;font-family:"trebuchet MS",Verdana,sans-serif; 
- color:#FFF;background-color:#5C87B2; 
-}#content{margin:0 0 0 2%;position:relative;} 
-.summary-container,.content-container{background:#FFF;width:96%;margin-top:8px;padding:10px;position:relative;} 
-.config_source{background:#fff5c4;} 
-.content-container p{margin:0 0 10px 0; 
-}#details-left{width:35%;float:left;margin-right:2%; 
-}#details-right{width:63%;float:left; 
-}#server_version{width:96%;_height:1px;min-height:1px;margin:0 0 5px 0;padding:11px 2% 8px 2%;color:#FFFFFF; 
- background-color:#5A7FA5;border-bottom:1px solid #C1CFDD;border-top:1px solid #4A6C8E;font-weight:normal; 
- font-size:1em;color:#FFF;text-align:right; 
-}#server_version p{margin:5px 0;} 
-table{margin:4px 0 4px 0;width:100%;border:none;} 
-td,th{vertical-align:top;padding:3px 0;text-align:left;font-weight:bold;border:none;} 
-th{width:30%;text-align:right;padding-right:2%;font-weight:normal;} 
-thead th{background-color:#ebebeb;width:25%; 
-}#details-right th{width:20%;} 
-table tr.alt td,table tr.alt th{background-color:#ebebeb;} 
-.highlight-code{color:#CC0000;font-weight:bold;font-style:italic;} 
-.clear{clear:both;} 
-.preferred{padding:0 5px 2px 5px;font-weight:normal;background:#006633;color:#FFF;font-size:.8em;} 
---> 
-</style> 
- 
-</head> 
-<body> 
-<div id="header"><h1>Server Error in Application "CITISIMPLICITY"</h1></div> 
-<div id="server_version"><p>Internet Information Services 7.0</p></div> 
-<div id="content"> 
-<div class="content-container"> 
- <fieldset><legend>Error Summary</legend> 
-  <h2>HTTP Error 404.0 - Not Found</h2> 
-  <h3>The resource you are looking for has been removed, had its name changed, or is temporarily unavailable.</h3> 
- </fieldset> 
-</div> 
-<div class="content-container"> 
- <fieldset><legend>Detailed Error Information</legend> 
-  <div id="details-left"> 
-   <table border="0" cellpadding="0" cellspacing="0"> 
-    <tr class="alt"><th>Module</th><td>IIS Web Core</td></tr> 
-    <tr><th>Notification</th><td>MapRequestHandler</td></tr> 
-    <tr class="alt"><th>Handler</th><td>StaticFile</td></tr> 
-    <tr><th>Error Code</th><td>0x80070002</td></tr> 
-     
-   </table> 
-  </div> 
-  <div id="details-right"> 
-   <table border="0" cellpadding="0" cellspacing="0"> 
-    <tr class="alt"><th>Requested URL</th><td>http://citisimplicity.8rewardsroad.com.sg:80/global_docs/edm/globalrewards_points_aug16/img/heroBModuleImg.jpg</td></tr> 
-    <tr><th>Physical Path</th><td>E:\websites\public\citi_simplicity\global_docs\edm\globalrewards_points_aug16\img\heroBModuleImg.jpg</td></tr> 
-    <tr class="alt"><th>Logon Method</th><td>Basic</td></tr> 
-    <tr><th>Logon User</th><td>citi_2015</td></tr> 
-     
-   </table> 
-   <div class="clear"></div> 
-  </div> 
- </fieldset> 
-</div> 
-<div class="content-container"> 
- <fieldset><legend>Most likely causes:</legend> 
-  <ul> 	<li>The directory or file specified does not exist on the Web server.</li> 	<li>The URL contains a typographical error.</li> 	<li>A custom filter or module, such as URLScan, restricts access to the file.</li> </ul> 
- </fieldset> 
-</div> 
-<div class="content-container"> 
- <fieldset><legend>Things you can try:</legend> 
-  <ul> 	<li>Create the content on the Web server.</li> 	<li>Review the browser URL.</li> 	<li>Create a tracing rule to track failed requests for this HTTP status code and see which module is calling SetStatus. For more information about creating a tracing rule for failed requests, click <a href="http://go.microsoft.com/fwlink/?LinkID=66439">here</a>. </li> </ul> 
- </fieldset> 
-</div> 
- 
- 
-<div class="content-container"> 
- <fieldset><legend>Links and More Information</legend> 
-  This error means that the file or directory does not exist on the server. Create the file or directory and try the request again. 
-  <p><a href="http://go.microsoft.com/fwlink/?LinkID=62293&amp;IIS70Error=404,0,0x80070002,6002">View more information &raquo;</a></p> 
-   
- </fieldset> 
-</div> 
-</div> 
-</body> 
-</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Citibank Singapore</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport"  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<link rel="shortcut icon" href="/gcb/images/favicon.ico" />
+	<!--[if IE]>
+	<link href="/gcb/css/iestyle.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<script type="text/javascript">var type = 'home',pageTitle = "" ; </script>
+	<script type="text/javascript" src="/gcb/js/global.js"></script>
+	<script type="text/javascript" src="/gcb/js/jquery-1.8.3.min.js"> </script>
+	<script type="text/javascript" src="/gcb/js/common.js"></script>
+	<script type="text/javascript" src="/gcb/js/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="/gcb/js/app.js"></script>
+	<script type="text/javascript" src="/gcb/js/xss.js"></script>
+	<link rel="stylesheet" type="text/css" href="/gcb/css/error.css" />
+	<link rel="canonical" href="https://www.citibank.com.sg/NotFound.html"/>
+	<style>
+@media only screen and (min-device-width : 320px) and (max-device-width	: 480px) {
+.linksbox1
+{
+padding-top: 27px !important;
+width: 138px !important;
+margin: 0px !important;
+}
+.linksbox1 p
+{
+font-size: 14px !important;
+     margin-left: 58px !important;
+     margin-top: -48px !important;
+}
+}
+.linksbox1
+{
+height: 111px;
+width: 400px;
+border-right: medium none;
+margin: 23px 0px 0px 60px;
+}
+
+.linksbox1 p
+{
+float: left;
+margin-left: 9px;
+font-size: 19px;
+margin-top: 15px;
+color:#014785;
+}
+.linksbox1 a
+{
+border-bottom:2px solid #014785;
+color:#014785;
+}
+</style>
+</head>
+<body class="errorPage404">
+	<div id="container">
+		<div id="header"><script type="text/javascript" src="/gcb/js/plugins/header.js"></script></div>
+
+		<div id="wrapper">
+			<div class="heading visible-desktop"><h1>ERROR</h1></div>
+			<div class="errorMain">
+				<div class="errorMain_left"><img src="/gcb/images/image_404.jpg" /></div>
+				<div class="errorMain_right">
+					<p>The page you are looking for<br class="hidden-mobile" />
+					cannot be found!</p>
+					<p class="spec_font"><a href="/portal/bluehome/index.htm?lid=SGENCBLGNCATLCitibankHomeLinkNOTF" title="Citibank"><img src="/gcb/images/home-icon.jpg" /> - Citibank Singapore Home Page</a></p>
+					<p class="spec_font">To look for more information, please scroll down to view other pages.</p>
+					<div class="errorSearch">
+						<div class="searchLabel">Search for</div>
+						<div id="gssSearchBox"></div>
+						<button onclick="javascript:gsearch();" title="SEARCH">SEARCH</button>
+					</div>
+
+				</div>
+			</div>
+			<div class="errorMain_links">
+				<div class="linksBox">
+					<h5><span>BANKING</span></h5>
+					<ul>
+						<li><a href="/gcb/deposits/local_currency.htm?lid=SGENCBLGNCATLBankingProductsNOTF">Banking Products <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/personal_banking/global_banking.htm?lid=SGENCBLGNCATLGlobalBankingNOTF">Global Banking <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/landing_page/deposits/apply-for-interestplus-account.htm?icid=SGDPAD9ENNOTFCAOA">Open a Savings Account <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox">
+					<h5><span>CREDIT CARDS</span></h5>
+					<ul>
+						<li><a href="/gcb/credit_cards/credit-card.htm?lid=SGENCBLGNCATLViewAllCreditCardsNOTF">View all Credit Cards <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/credit_cards/privileges_programs.htm?lid=SGENCBLGNCATLYourPrivilegesNOTF">Your Privileges <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/credit_cards/pay_my_bills.htm?lid=SGENCBLGNCATLAdditionalServicesNOTF">Additional Services <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox">
+					<h5><span>READY CREDIT</span></h5>
+					<ul>
+						<li><a href="/gcb/ready_credit/ready_credit.htm?lid=SGENCBLGNCATLReadyCreditProductsNOTF">Ready Credit products <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/ready_credit/rc_card.htm?lid=SGENCBLGNCATLFeaturesAndBenefitsNOTF">Features &amp; Benefits <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/ready_credit/manage_your_rc_account.htm?lid=SGENCBLGNCATLAdditionalServicesANOTF">Additional Services <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox lastLinksBox">
+					<h5><span>DEPOSITS</span></h5>
+					<ul>
+						<li><a href="/gcb/deposits/local_currency.htm?lid=SGENCBLGNCATLAccountsAndDepositsNOTF">Accounts &amp; Deposits <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/deposits/debit_plat.htm?lid=SGENCBLGNCATLServicesAndInformationNOTF">Services &amp; Information <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/deposits/casa_onebill.htm?lid=SGENCBLGNCATLManageYourAccountNOTF">Manage your Account <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linedivider hidden-mobile"></div>
+				<div class="linksBox">
+					<h5><span>INSURANCE</span></h5>
+					<ul>
+						<li><a href="/gcb/insurance/insurance.htm?lid=SGENCBLGNCATLInsuranceProductsNOTF">Insurance products <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/insurance/travel.htm?lid=SGENCBLGNCATLServicesAndInformationANOTF">Services &amp; Information <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox">
+					<h5><span>INVESTMENT</span></h5>
+					<ul>
+						<li><a href="/gcb/investments/investments.htm?lid=SGENCBLGNCATLInvestmentProductsNOTF">Investment products <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/investments/citi_online_invest.htm?lid=SGENCBLGNCATLServicesAndInformationBNOTF">Services &amp; Information <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox">
+					<h5><span>LOANS</span></h5>
+					<ul>
+					<li><a href="/gcb/loans/home.htm?lid=SGENCBLGNCATLViewAllLoansNOTF">View All Loans <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/mortgages/mortgagesolutions.htm?lid=SGENCBLGNCATLYourMortgageSolutionsNOTF">Your Mortgage Solutions <span class="linksBoxImg"></span></a></li>
+						<!--<li><a href="/gcb/loans/ln_al.htm?lid=SGENCBLGNCATLYourCarLoanSolutionsNOTF">Your Car Loan Solutions <span class="linksBoxImg"></span></a></li>-->
+						
+					</ul>
+				</div>
+				<div class="linksBox lastLinksBox">
+					<h5><span>WEALTH MANAGEMENT</span></h5>
+					<ul>
+						<li><a target="_blank" href="/portal/goldhome/index.htm?lid=SGENCBLGNCATLCitigoldNOTF" class="cgcolor">Citigold <span class="linksBoxImg_cg"></span></a></li>
+						<li><a target="_blank" href="/cpc/index.htm?lid=SGENCBLGNCATLCitigoldPrivateClientNOTF" class="cpccolor">Citigold Private Client <span class="linksBoxImg_cpc"></span></a></li>
+						<li><a target="_blank" href="https://www.ipb.citibank.com.sg/portal/home_english/citi_home.htm">Citibank International Personal Bank <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linedivider hidden-mobile"></div>
+				<div class="linksBox">
+					<h5><span>BUSINESS</span></h5>
+					<ul>
+						<li><a href="/gcb/business/commercial_cards/commercial_cards.htm?lid=SGENCBLGNCATLCommercialCardsNOTF">Commercial Cards <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/citibusiness/home/index.htm?lid=SGENCBLGNCATLCitibusinessNOTF">CitiBusiness <span class="linksBoxImg"></span></a></li>
+						<li><a href="/gcb/otherservices/cbaw.htm?lid=SGENCBLGNCATLCitiAtWorkNOTF">Citi At Work <span class="linksBoxImg"></span></a></li>
+					</ul>
+				</div>
+				<div class="linksBox linksbox1">
+  <img style="float:left;" src="/gcb/images/Present_Icon.png"> <p> Click <a href="/gcb/static/all_promo.htm?icid=SGPRUDNENNOTFCAAS">here</a> for the latest promotions </p> </div>
+			</div>
+		</div>
+		<div id="footer"><script type="text/javascript" src="/gcb/js/plugins/footer.js"></script></div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("body").preSelectLftNav("");
+			$(".lftNavMo, .leftNavIcon").remove();
+			$(".lftNavMo, .lftNavIcon, .topMenuRight, #nav, .logOutIcon, .mainMenuIcon, .leftNavIcon, .searchMobWrap").remove();
+			
+			$("body").setEqualHeight($(".linksBox", this))
+			
+			if (mobile.detect() && !tablet.detect()){
+				$('.linksBox').removeClass('lastLinksBox');
+				  $(".linedivider").remove();
+			}
+		});
+	</script>
+	  <script language="javascript" src="/gcb/js/Site_Cat_code.js"></script>
+<script type="text/javascript"> 
+s.pageType="errorPage";
+</script>
+<script type="text/javascript" src="/gcb/js/site_cate_pagecode.js"></script> 
+</body>
+</html>
